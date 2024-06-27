@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 123, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.__className_aaf875 {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  )
+  rgb(var(--background-start-rgb));;
+  height: 100vh; /* Make sure it covers the full viewport height */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_container {
+  background: #bac9ff30;
+  width: clamp(40vh, 110vh, 180vh);
+  height: clamp(20vh, 70vh, 130vh);
+  display: flex;
+  justify-content: space-between; /* Space between the image and the login form */
+  align-items: center;
+  box-shadow: 4px 4px 8px rgb(255, 255, 255); /* Optional shadow for better visibility */
+  border-radius: 25px; /* Optional rounded corners */
+  padding: 20px;
+}
+
+.iconpage {
+  margin-left: 3rem;
+  flex: 1; /* Make the image container take up half the space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_cont{
+  height: 40rem;
+  width: 25rem;
+  margin-left: 16%;
+  margin-top: 2rem;
+}
+
+.loginpage {
+  justify-content: center;
+  padding: 20px;
+  margin-left: 5rem;
+  width:40rem;
+  height:57rem;
+  border-radius: 25px; /* Optional rounded corners */
+}
+.loginpage h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.emoji {
+  font-size: 4rem;
+  margin-left: 45%;
+}
+
+.loginpage form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.loginpage label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.loginpage input[type="email"],
+.loginpage input[type="password"],
+.loginpage input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background: #e7e9ff4f;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-icon {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.forgot-password {
+  color: green;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  text-align: right;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.loginpage button {
+  padding: 10px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e7e9ff4f;
+  color: white;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.loginpage button:hover {
+  background-color: #0056b3;
+}
+
+.loginpage p {
+  text-align: center;
+  position: relative;
+}
+.loginpage .line_cont{
+  margin-top: 2rem;
+}
+
+.loginpage .line_cont:before,
+.loginpage .line_cont:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background: #ccc;
+}
+
+.loginpage .acc{
+  margin-top: 2rem;
+}
+
+.loginpage p:before {
+  left: 0;
+}
+
+.loginpage p:after {
+  right: 0;
+}
+
+.loginpage p a {
+  color: green;
+  text-decoration: none;
+}
+
+.loginpage p a:hover {
+  text-decoration: underline;
+}
+
+.loginpage .alt-login-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.google-button {
+  background-color: #db4437;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-button:hover {
+  background-color: #c23321;
+}
+
+.facebook-button {
+  background-color: #3b5998;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook-button:hover {
+  background-color: #2d4373;
+}
+
+.google-button .fa-google,
+.facebook-button .fa-facebook {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
